@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+.index {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eacb49;
+  .main {
+    width: 750px;
+    height: 1060px;
+  }
+  .content {
+    width: 480px;
+    margin: 0 auto;
+    border: 10px solid #000;
+    height: 568px;
+    padding: 45px 0 35px;
+    position: relative;
+    // border-top: none;
+    &::before {
+      display: block;
+      content: " ";
+      position: absolute;
+      height: 0px;
+      width: 340px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 10px;
+      background-image: linear-gradient(to right, #eacb49 0%, #eacb49 50%, transparent 50%);
+      background-repeat: repeat-x;
+      background-size: 20px 10px;
+      top: -10px;
+    }
+    &::after {
+      display: block;
+      content: "Tetris";
+      position: absolute;
+      height: 0px;
+      width: 160px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 30px;
+      background: #eacb49;
+      top: -30px;
+      text-align: center;
+      font-size: 30px
+    }
+  }
+  .game {
+    width: 390px;
+    height: 478px;
+    border: 5px solid;
+    border-color: #987f0f #fae36c #fae36c #987f0f;
+    margin: 0 auto;
+    position: relative;
+  }
+  .inner {
+    width: 380px;
+    height: 468px;
+    margin: 0 auto;
+    background: #9ead86;
+    padding: 8px;
+    border: 2px solid #494536;
+  }
+}
