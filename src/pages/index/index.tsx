@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { View, Button, Text } from '@tarojs/components'
-
+import { View } from '@tarojs/components'
+import Keyboard from '../../components/keybord';
 import { add, minus, asyncAdd } from '../../actions/counter'
 
 import './index.less'
@@ -71,6 +71,7 @@ class Index extends Component {
               <View className='inner'></View>
             </View>
           </View>
+          <Keyboard />
         </View>
       </View>
     )
