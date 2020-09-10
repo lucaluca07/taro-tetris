@@ -6,11 +6,11 @@ const Keyboard: React.FC = ({}) => {
   return (
     <View className='keyboard'>
       <View className='move'>
-        <View>+</View>
-        <Button className='rotate btn'>旋转</Button>
-        <Button className='right btn'>右移</Button>
-        <Button className='down btn'>下移</Button>
-        <Button className='left btn'>左移</Button>
+        <Button className='rotate btn'>
+        </Button>
+        <Button className='right btn'></Button>
+        <Button className='down btn'></Button>
+        <Button className='left btn'></Button>
       </View>
       <View className='right-block'>
         <View className='function'>
